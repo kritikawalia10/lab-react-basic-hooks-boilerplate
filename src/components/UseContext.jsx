@@ -4,8 +4,6 @@ import UseState from './UseState';
 
 function UseContext() {
 
-    const para = ``
-
     const theme = useContext(ToggleTheme);
     const themetype = {
         backgroundColor: theme ? 'black' : 'gray',
@@ -15,7 +13,7 @@ function UseContext() {
 
   return (
     <div style = {themetype}>
-       <UseState para = {para}/>   
+       <UseState/>   
     </div>
   )
 }
